@@ -50,9 +50,9 @@ sudo apt update && sudo apt install -y \
     frida \
     objection
 ```
-###快速开始
+### 快速开始
 
-##基本用法
+## 基本用法
 ```bash
 sudo python3 perster.py <目标IP或域名> [选项]
 ```
@@ -74,7 +74,7 @@ sudo python3 perster.py <目标IP或域名> [选项]
 |--harmony	          |强制启用HarmonyOS模块|
 |--full	              |执行完整测试         |
 
-###技术架构
+### 技术架构
 ```text
 ├── 侦察阶段
 │   ├── 网络拓扑分析
@@ -92,8 +92,8 @@ sudo python3 perster.py <目标IP或域名> [选项]
     ├── 风险评级
     └── 修复建议
 ```
-###报告示例
-##框架生成的报告包含以下部分：
+### 报告示例
+## 框架生成的报告包含以下部分：
 
 执行摘要 - 测试概览和关键发现
 
@@ -105,7 +105,7 @@ sudo python3 perster.py <目标IP或域名> [选项]
 
 修复建议 - 详细的修复方案
 
-##报告格式支持：
+## 报告格式支持：
 
 Markdown (report.md)
 
@@ -113,7 +113,7 @@ HTML (report.html)
 
 JSON (vulnerabilities.json)
 
-###注意事项
+### 注意事项
 合法使用：仅用于授权测试，使用前必须获得书面许可
 
 网络影响：部分扫描可能对目标系统造成负载
