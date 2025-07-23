@@ -49,29 +49,33 @@ sudo apt update && sudo apt install -y \
     upx \
     frida \
     objection
-快速开始
-基本用法
-bash
-sudo python3 perster.py <目标IP或域名> [选项]
+```
+###快速开始
 
+##基本用法
+```bash
+sudo python3 perster.py <目标IP或域名> [选项]
+```
 完整选项
-选项	描述
--o DIR, --output DIR	指定输出目录
---ngrok-token TOKEN	设置Ngrok认证令牌
---evasion LEVEL	设置逃逸级别(1-5)
---proxy URL	设置代理服务器
---stealth	启用隐身模式
---no-progress	禁用进度显示
---windows	强制启用Windows模块
---linux	强制启用Linux模块
---macos	强制启用macOS模块
---web	强制启用Web模块
---android	强制启用Android模块
---ios	强制启用iOS模块
---harmony	强制启用HarmonyOS模块
---full	执行完整测试
-技术架构
-text
+| 选项	              |  描述              |
+|---------------------|--------------------|
+|-o DIR, --output DIR |	指定输出目录        |
+|-ngrok-token TOKEN	  |设置Ngrok认证令牌    |
+|--evasion LEVEL	  |设置逃逸级别(1-5)    |
+|--proxy URL	      |设置代理服务器       |
+|--stealth	          |启用隐身模式         |
+|--no-progress	      |禁用进度显示         |
+|--windows	          |强制启用Windows模块  |
+|--linux	          |强制启用Linux模块    |
+|--macos	          |强制启用macOS模块    |
+|--web	              |强制启用Web模块      |
+|--android	          |强制启用Android模块  |
+|--ios	              |强制启用iOS模块      |
+|--harmony	          |强制启用HarmonyOS模块|
+|--full	              |执行完整测试         |
+
+###技术架构
+```text
 ├── 侦察阶段
 │   ├── 网络拓扑分析
 │   ├── 服务指纹识别
@@ -87,8 +91,9 @@ text
     ├── 漏洞详情
     ├── 风险评级
     └── 修复建议
-报告示例
-框架生成的报告包含以下部分：
+```
+###报告示例
+##框架生成的报告包含以下部分：
 
 执行摘要 - 测试概览和关键发现
 
@@ -100,7 +105,7 @@ text
 
 修复建议 - 详细的修复方案
 
-报告格式支持：
+##报告格式支持：
 
 Markdown (report.md)
 
@@ -108,7 +113,7 @@ HTML (report.html)
 
 JSON (vulnerabilities.json)
 
-注意事项
+###注意事项
 合法使用：仅用于授权测试，使用前必须获得书面许可
 
 网络影响：部分扫描可能对目标系统造成负载
